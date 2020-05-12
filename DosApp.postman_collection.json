@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "ab845680-ca8b-4237-bd02-d355e7d9e720",
+		"name": "DosApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://0.0.0.0:8080/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8080/user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "This is get method to which fires select query on table."
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:8080/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"Age\": 20,\n        \"Department\": \"computer\",\n        \"ID\": 2,\n        \"Name\": \"Jerry\",\n        \"Subject\": \"Computer,Math,Electronix\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8080/user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "This is post request for inserting into the table."
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:8080/user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"Age\": 20,\n        \"Department\": \"computer\",\n        \"ID\": 2,\n        \"Name\": \"Ben\",\n        \"Subject\": \"Computer,Math,Electronix\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8080/user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "This is put request to update the table by user id."
+			},
+			"response": []
+		},
+		{
+			"name": "http://0.0.0.0:8080/user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"Age\": 20,\n        \"Department\": \"computer\",\n        \"ID\": 1,\n        \"Name\": \"Ben\",\n        \"Subject\": \"Computer,Math,Electronix\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8080/user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "This is delete request to delete from table by id."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
